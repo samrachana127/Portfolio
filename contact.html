@@ -1,25 +1,71 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" type="text/css" href="style.css">
-        <title> My Website</title>
+	    <title>MY Portfolio</title>
 
-        <!--google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	   <!--boxicons link-->
+	   <link rel="stylesheet"
+       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-        <!--box icons-->
-        <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+       <!--remix icons link-->
+       <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+       rel="stylesheet"/>
 
-        <!--remix icons-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
-    </head>
-    <body>
-        <div class="contact-container">
-            <h7>Contact Me</h7>
+       <!--google fonts link-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+		  <a href="#" class="logo"><span>S</span>B</a>
 
+		  <ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="project.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="videoDemo.html">VideoDemo</a></li>
+			<li><a href="sitereport.html">SiteReport</a></li>
+		  </ul>
+
+		  <div class="menu-btn">
+			<div class="bx bx-menu" id="menu-icon"></div>
+		  </div>
+	    </header>
+	    <!--contact-section-->
+	    <div class="contact-container"id="contact">
+	    	<div>
+	    		<h1>Contact Me</h1>
+	    		<p>I'm here to answer any questions you may have.</p>
+	    	</div>
+        <div class="form-container">
+            <h2>Your Details</h2>
+            <form action="#" method="POST">
+ 
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+ 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+ 
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!--contact-info-->
+    <section class="contact-info">
+        <h2>Contact Info</h2>
+        <info>
+            Phone: <a href="tel:0000000000">000-000-0000</a><br>
+            Email: <a href="mailto:samrachanabudhathoki48@gmail.com">samrachanabudhathoki48@gmail.com</a>
+        </info>
+    </section>
         </div>
     </body>
-</html>    
+</html>
