@@ -248,3 +248,111 @@ contact-container{
 .contact-info info a{
 	color: #108abc;
 }
+
+Jison
+@media(max-width:1070px){
+	.hero{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		height: 130vh;
+	}
+	.hero-text{
+		text-align: center;
+		order: 2;
+		width: 100%;
+	}
+	.hero-text p{
+		width: 100%;
+	}
+}
+
+@media(max-width: 1510px){
+	:root{
+		--h1-font: 4.2em;
+	    --p-font: 1rem;
+	}
+	.hero-image img{
+		max-width: 540px;
+	    width: 100%;
+	    height: 100%;
+	    object-fit: contain;
+	}
+}
+
+@media(max-width: 1330px){
+	header{
+		padding: 22px 4%;
+	}
+	section{
+		padding: 40px 4% 50px;
+	}
+	:root{
+		--h1-font: 4rem;
+	}
+	.hero-image img{
+		max-width: 500px;
+	    width: 100%;
+	    height: 100%;
+	    object-fit: contain;
+	}
+}
+@media(max-width:1200px){
+	#menu-icon{
+		display: block;
+	}
+	.navbar{
+		position: absolute;
+		top: 0;
+		right: -100%;
+		width: 100%;
+		height: 100vh;
+		backdrop-filter: blur(30px);
+		align-items: center;
+		flex-direction: column;
+		padding-top: 150px;
+		transition: all .6s ease;
+	}
+	.navbar a{
+		display: block;
+		padding: 0;
+		margin: 0px 0px 30px 0px;
+		font-size: 1.7rem;
+	}
+	.navbar a:hover{
+		color: var(--main-color);
+	}
+	header{
+		background: var(--second-bg-color);
+		padding: 10px 4%;
+	}
+	.logo{
+		font-size: 25px;
+	}
+	.navbar{
+		padding: 9px 20px;
+		font-size: 14px;
+	}
+	.hero{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		height: auto;
+	}
+	.hero-text{
+		text-align: center;
+		order: 2;
+		width: 100%;
+	}
+	.hero-text p{
+		width: 100%;
+	}
+	.hero-image{
+		margin: auto;
+	}
+}
+@media(max-width:610px){
+	:root{
+		--h1-font: 2.7rem;
+	}
+}
