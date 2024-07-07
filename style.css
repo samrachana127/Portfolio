@@ -8,7 +8,7 @@
 }
 body{
 	background-image: url("C:\\Users\\Dell\\Downloads\\Sea.jpeg");
-	color: skyblue;
+	color: #1c95c7; 
 	overflow-x: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -91,7 +91,7 @@ header{
    left:-0px;
 
 }
-.menu{
+.menu-btn{
 	display: flex;
 	align-items: center;
 }
@@ -101,7 +101,7 @@ header{
 	margin-left: 22px;
 	z-index: 10001;
 	cursor: pointer;
-	display: flex;
+	display: none;
 	color: #406473;
 }
 
@@ -137,54 +137,60 @@ border: 2px solid darkred;
 }
 
 .project-content{
+	max-width: 1200px;
 	display:grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, auto)) ;
-	grid-gap: 2rem;
-	align-items: center;
+	grid-template-columns:auto auto auto; 
+	gap: 2rem;
 	margin-top: 4.4rem;
+	color: skyblue;
+	margin: 0 auto;
+}
+.main h2{
+	color:#406473;
+	font-size:2.3rem;
+	letter-spacing: 2px;
+	margin: 8px;
+	padding: 120px 13% 9px;
+}
+
+.main h1{
+	font-family: "Caveat", cursive;
+	font-size: 35px;
+	font-weight: 300px;
+	color:#406473;
+
+}
+.main{
+	text-align: center;
 }
 .column{
 	background: #3183a7;
 	padding: 60px 35px;
 	border-radius: 5px;
 	transition:all.40s;
-	height: 400px;
+	height: 350px;
+	margin: 5px;
+	font-size: 1.1rem;
 	
 }
-.column h5{
-	font-size: 1rem;
-	text-align: center;
-}
-.column h4{
-	font-size: 1rem;
-	text-align: center;
-}
-.column h6{
-	font-size: 1rem;
-	text-align: center;
-}
+
 /*contact section*/
 .contact-container{
-	padding: 30PX;
-	text-align: CE;
-}
-
-contact-container{
 	letter-spacing: 2px;
 	margin: 0 auto;
 	padding: 90px 13% 9px;
-	color: black;
+	color: #108abc;
 	text-align: center;
-	font-size: 30px;
+	font-size: 1.1rem;
 }
 .contact-container  h1 span{
-	color: black;
+	color: #108abc;
 	margin: 0;
 }
 
 .contact-container p{
 	font-family: "Caveat", cursive;
-	font-size: 30px;
+	font-size:1.1rem;
 	color: #0a3d51;
 	padding: 4px;
 }
@@ -248,8 +254,113 @@ contact-container{
 .contact-info info a{
 	color: #108abc;
 }
-
-Jison
+/*responsive */
+@media(max-width:1080px){
+	#menu-icon{
+		display: block;
+	}
+	.navbar{
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		padding: 90px 60px;
+		top: 0;
+		bottom: 0;
+		left: 100%;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		background: var(--bg-color);
+		transition: all .50s ease;
+	}
+	.navbar a{display: block;
+		color: var(--text-color);
+		padding: 0;
+		margin: 0px 0px 40px 0px;
+		font-size: 2.2rem;
+		font-weight: 400;}
+	
+	.navbar.open{
+		left: 0;
+	}
+	.project-content{
+		grid-template-columns: auto;
+	}
+	.column{
+		padding: 20px 10px;
+		height: 240px;
+	}
+	.contact-container{
+		padding: 50px 5% 20px;
+	}
+	.contact-container h1{
+		font-size: 2rem;
+		margin-top: 40px;
+	}
+	.form-container{
+		max-width: 90%;
+		padding: 20px;
+	}
+	.form-container h2{
+		font-size: 1.3rem;
+		margin-bottom: 15px;
+	}
+	.form-container label{
+		font-size: 0.8rem;
+	}
+	.form-container input,
+	.form-container textarea{
+		font-size: 0.8rem;
+	}
+	.contact-info{
+		padding: 15px 0;
+	}
+	contact-container{
+		padding: 50px 5% 20px;
+	}
+	.contact-container h1{
+		font-size: 2rem;
+		margin-top: 40px;
+	}
+	.form-container{
+		max-width: 90%;
+		padding: 20px;
+	}
+	.form-container h2{
+		font-size: 1.3rem;
+		margin-bottom: 15px;
+	}
+	.form-container label{
+		font-size: 0.8rem;
+	}
+	.form-container input,
+	.form-container textarea{
+		font-size: 0.8rem;
+	}
+	.contact-info{
+		padding: 15px 0;
+	}
+}
+@media(max-width:1800px){
+	header{
+		padding: 22px 6%;
+	}
+	section{
+		padding: 40px 6% 50px;
+	}
+}
+@media(max-width:1260px){
+	header{
+		padding: 20px 3%;
+	}
+	section{
+		padding: 70px 3% 80px;
+	}
+	:root{
+		--h1-font: 3.8em;
+	    --h2-font: 2.5rem;
+	    --p-font: 15px;}
+}
 @media(max-width:1070px){
 	.hero{
 		display: flex;
@@ -350,9 +461,135 @@ Jison
 	.hero-image{
 		margin: auto;
 	}
+	.project-content{
+		grid-template-columns:auto auto;
+		gap:1.5rem;
+		margin-top: 3rem;
+	}
+	.column{
+		padding: 25px 15px;
+		height:260px;
+	}
+	.contact-container{
+		padding: 60px 10% 30px;
+	}
+	.contact-container h1{
+		font-size: 2.5rem;
+		margin-top: 50px;
+	}
+	.form-container {
+		max-width: 80%;
+		padding: 30px;
+	}
+	.form-container h2{
+		font-size: 1.5rem;
+		margin-bottom: 20px;
+	}
+	.form-container label{
+		font-size: 0.9rem;
+	}
+	.form-container input,
+	.form-container textarea{
+		font-size: 0.9rem;
+	}
+	.contact-info{
+		padding: 20px 0;
+	}
+
 }
 @media(max-width:610px){
 	:root{
 		--h1-font: 2.7rem;
 	}
+	.contact-container{
+		padding: 30px 5% 5px;
+	}
+	.contact-container h1{
+		font-size: 1.5rem;
+		margin-top: 20px;
+	}
+	.form-container{
+		padding: 10px;
+	}
+	.form-container h2{
+		font-size: 1rem;
+	}
+	.form-container label{
+		font-size: 0.6rem;
+	}
+	.form-container input,
+	.form-container textarea {
+		font-size: 0.6rem;
+	}
+	.contact-info{
+		font-size: 0.8rem;
+	}
 }
+
+@media(max-width:768px){
+	.project-content{
+		grid-template-columns: auto;
+		gap:1.2rem;
+		margin-top: 3rem;
+    }
+	.column{
+		padding: 15px;
+		height: 220px;
+	}
+	.contact-container{
+		padding: 40px 5% 10px;
+	}
+	.contact-container h1{
+		font-size: 1.8rem;
+		margin-top: 30px;
+	}
+	.form-container{
+		padding: 15px;
+	}
+	.form-container h2{
+		font-size: 1.1rem;
+		margin-bottom: 10px;
+	}
+	.form-container label{
+		font-size: 0.7rem;
+	}
+	.form-container input,
+	.form-container textarea{
+		font-size: 0.7rem;
+	}
+	.contact-info{
+		font-size: 0.8rem;
+	}
+
+}
+
+/*site report-section*/
+section.sitereport {
+	padding: 50px;
+	max-width: fit-content;
+	margin: 20px auto;
+}
+section.sitereport h1{
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+section.sitereport article{
+	margin-bottom: 20px;
+}
+section.sitereport article h2{
+	border-bottom: 2px solid #333;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	color:#108abc;
+}
+section.sitereport article p{
+	margin-bottom: 10px;
+	color: #295e74;
+}
+section.sitereport article a{
+	color:black; 
+	text-decoration: none;
+	font-weight: bold;
+}
+
