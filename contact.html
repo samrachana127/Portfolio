@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +9,6 @@
 	   <!--boxicons link-->
 	   <link rel="stylesheet"
        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-       <!--remix icons link-->
-       <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-       rel="stylesheet"/>
 
        <!--google fonts link-->
        <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,8 +31,18 @@
 			<div class="bx bx-menu" id="menu-icon"></div>
 		  </div>
 	    </header>
+	    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	    <script>
+	    	let menu = document.querySelector('#menu-icon');
+		    let navbar = document.querySelector('.navbar');
+
+		    menu.onclick = () => {
+		    	menu.classList.toggle('bx-x');
+			    navbar.classList.toggle('open')
+			}
+		</script>
 	    <!--contact-section-->
-	    <div class="contact-container"id="contact">
+	    <div class="contact-container" id="contact">
 	    	<div>
 	    		<h1>Contact Me</h1>
 	    		<p>I'm here to answer any questions you may have.</p>
@@ -57,15 +63,14 @@
                 <button type="submit" class="submit-button">Submit</button>
             </form>
         </div>
-    </section>
-    <!--contact-info-->
-    <section class="contact-info">
-        <h2>Contact Info</h2>
-        <info>
-            Phone: <a href="tel:0000000000">000-000-0000</a><br>
-            Email: <a href="mailto:samrachanabudhathoki48@gmail.com">samrachanabudhathoki48@gmail.com</a>
-        </info>
-    </section>
+            <!--contact-info-->
+             <section class="contact-info">
+             	<h2>Contact Info</h2>
+                <div class="info">
+                 Phone: <a href="tel:0000000000">000-000-0000</a><br>
+                 Email: <a href="mailto:samrachanabudhathoki48@gmail.com">samrachanabudhathoki48@gmail.com</a>
+                </div>
+            </section>
         </div>
     </body>
 </html>

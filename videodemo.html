@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+        <title> My Website</title>
+
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!--box icons-->
+        <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--remix icons-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+    </head>
+    <body>
+    	<!--Header Section-->
+    	<header>
+    	  <a href="#" class="logo"><span>S</span>B</a>
+
+		  <ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="project.html">Project</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="VideoDemo.html">VideoDemo</a></li>
+			<li><a href="SiteReport.html">SiteReport</a></li>
+		  </ul>
+
+		  <div class="menu-btn">
+		  	<div class="bx bx-menu" id="menu-icon"></div>
+		  </div>
+
+    	</header>
+    	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script type="text/javascript">
+            let menu = document.querySelector('#menu-icon');
+            let navbar = document.querySelector('.navbar');
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x');
+                navbar.classList.toggle('open')
+            }
+        </script>
+        <section class="video-demo">
+			<h2>Video Demo</h2>
+			<video controls>
+				<source src=https://mymedia.northampton.ac.uk/media/Kaltura+Capture+recording+-+July+7th+2024%2C+8A45A56+pm/0_p72ajll1>
+			</video>
+			<p class="video-caption">
+				This is a demonstration video.
+			</p>
+		</section>
+</body>
+<footer>
+</footer>
+
+    </body>
+    </html>

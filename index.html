@@ -12,10 +12,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
         <!--box icons-->
-        <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-        <!--remix icons-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
     </head>
     <body>
     	<!--Header Section-->
@@ -44,9 +42,19 @@
      		<p>Welcome to my portfolio</p>
      	</div>
      <div class="main-img">
-     		<img src="pic1.jpg" width="250px" >
+     		<img src="pic1.jpg" alt="hero-image" >
      	</div>	
      </section>
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	    <script>
+	    	let menu = document.querySelector('#menu-icon');
+		    let navbar = document.querySelector('.navbar');
+
+		    menu.onclick = () => {
+		    	menu.classList.toggle('bx-x');
+			    navbar.classList.toggle('open')
+			}
+		</script>
 
      </body>
 </html>

@@ -12,10 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
         <!--box icons-->
-        <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-        <!--remix icons-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>
         <header>
@@ -32,24 +29,56 @@
             <div class="bx bx-menu" id="menu-icon"></div>
           </div>
       </header>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            let menu = document.querySelector('#menu-icon');
+            let navbar = document.querySelector('.navbar');
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x');
+                navbar.classList.toggle('open')
+            }
+        </script>
       <section class="sitereport">
         <h1>Site Report</h1>
         <article>
             <h2>Introduction</h2>
-            <p>Creating my website was a journey filled with excitement and challenges. Initially, I was eager to design a site that would reflect my unique style and skills. However, as I examined into the task, I quickly encountered the complexities of coding and ensuring everything worked smoothly. Dealing with bugs and technical issues tested my patience, but each problem I solved taught me something new about web development. My focus shifted towards creating a design that was user-friendly and accessible across different devices, aiming for easy navigation and a visually appealing layout. Despite the challenges, overcoming each obstacle gave me a sense of accomplishment and improved my abilities significantly.</p>
-        </article>
-        <article>
-            <h2>Structure</h2>
-            <p>Ultimately, my portfolio website serves as an online showcase of my skills and capabilities. It typically includes sections like an introduction or about me, a gallery showcasing my projects, and contact information for potential collaborations or inquiries. Drawing inspiration from the sky, I opted for a simple yet classic sky blue color scheme for the website, aiming to create a clean and professional look. My brother's impressive design work also inspired me, pushing me to strive for the same level of quality and creativity in my own portfolio.</p>
+            <p>Creating my website was a journey filled with excitement and challenges. Initially, I was eager to design a site that would reflect my unique style and skills. However, as I examined into the task, I quickly encountered the complexities of coding and ensuring everything worked smoothly. Dealing with bugs and technical issues tested my patience, but each problem I solved taught me something new about web development. My focus shifted towards creating a design that was user-friendly and accessible across different devices, aiming for easy navigation and a visually appealing layout.</p>
         </article>
         <article>
             <h2>Design</h2>
-            <p>For a deeper understanding of my portfolio's creation process, I invite you to explore my video demo. In this video, I discuss the various steps involved in building the portfolio and demonstrate its functionality. This project has been more than just a way to display my work—it has been a profound learning experience. It has equipped me with valuable skills and insights into web development and has fueled my ambition to continue improving and achieving greater results in future projects.</p>
+            <p>Ultimately, my portfolio website serves as an online showcase of my skills and capabilities. It typically includes sections like an introduction or about me, a gallery showcasing my projects, and contact information for potential collaborations or inquiries. Drawing inspiration from the sky, I opted for a simple yet classic sky blue color scheme for the website, aiming to create a clean and professional look. My brother's impressive design work also inspired me, pushing me to strive for the same level of quality and creativity in my own portfolio.</p>
         </article>
         <article>
-            <h2>Responsiveness</h2>
+            <h2>Structure</h2>
+            <p>Homepage: My homepage is like the front door to my online world. It introduces visitors to who I am and what I do. It's where they get their first impression of me and my work.</p>
+
+           <p>Projects: This section is where I proudly display the projects I've worked on. It's like my portfolio or showcase, where visitors can see examples of my best work. It helps them understand my skills and experience.</p>
+
+           <p>Contact: Here's where people can easily get in touch with me. It's like having a direct line for potential clients or collaborators to reach out. I provide a form where they can leave their details and message me directly.</p>
+
+           <p>Video Demo: In this section, I show videos that demonstrate my work in action. It's like bringing my projects to life visually, so visitors can see exactly what I'm capable of and how my work looks in real scenarios.</p>
+
+           <p>Site Report: This section gives me insights into how my website is performing. It's like having a report card for my site, showing me things like visitor statistics, popular pages, and any technical issues that need attention. It helps me keep my website running smoothly and improving over time.</p>
+
+           <p>Hamburger Icon: This little icon in the corner of my website is a neat way to navigate. When clicked, it opens up a menu with links to other important pages like my projects, about me, and contact. It keeps my site clean and organized while making it easy for visitors to find what they're looking for.</p>
+
+           <p>Each of these sections plays a vital role in presenting myself and my work effectively to visitors on my portfolio website.</p>
+       </article>
+       <article>
+            <h2>Validation</h2>
             <p>Evaluate how the website adapts to different screen sizes and devices.</p>
         </article>
-      </main>
+        <div>
+            <img src="index pic.png">
+
+
+
+        </div>
+        <div>
+            <img src="contact pic.png">
+        </div>
+
+    </section>
 </body>
 </html>

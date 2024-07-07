@@ -82,6 +82,12 @@ header{
 	margin-bottom: 2;
 }
 
+.main-img img{
+width: 250px; 
+}
+
+
+
 .logo{
 	color: #0f394a;
 	font-size: 30px;
@@ -433,6 +439,9 @@ border: 2px solid darkred;
 	.navbar a:hover{
 		color: var(--main-color);
 	}
+	.navbar.open{
+		right: 0;
+	}
 	header{
 		background: var(--second-bg-color);
 		padding: 10px 4%;
@@ -440,10 +449,7 @@ border: 2px solid darkred;
 	.logo{
 		font-size: 25px;
 	}
-	.navbar{
-		padding: 9px 20px;
-		font-size: 14px;
-	}
+	
 	.hero{
 		display: flex;
 		flex-wrap: wrap;
@@ -582,6 +588,7 @@ section.sitereport article h2{
 	padding-bottom: 5px;
 	margin-bottom: 10px;
 	color:#108abc;
+
 }
 section.sitereport article p{
 	margin-bottom: 10px;
@@ -593,3 +600,24 @@ section.sitereport article a{
 	font-weight: bold;
 }
 
+.video-demo {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 0 13%;
+}
+.video-demo video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-caption {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
